@@ -1,0 +1,212 @@
+
+body {
+    background-color: #2c2c2c;  /* Dark grey background */
+    color: #ADD8E6; /* Light grey text for contrast */
+    padding-top: 60px; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e1e1e;  /* Slightly darker grey for navigation */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.topnav a {
+    color: #C0C0C0;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    transition: all 0.3s ease;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+.topnav a:hover {
+    background-color: #ff0000;
+    color: #1e1e1e;
+}
+
+.topnav a.active {
+    background-color: #00b4ff;  /* Electric blue for active state */
+    color: white;
+}
+
+.chart-container { 
+    width: 90%; 
+    max-width: 800px; 
+    background-color: whitesmoke;  /* Slightly lighter grey for contrast */
+    color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    border: 1px solid #00b4ff;  /* Electric blue border */
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 600px) {
+    .topnav {
+        flex-direction: column;
+    }
+    
+    .topnav a {
+        width: 100%;
+        text-align: center;
+        margin: 5px 0;
+        background-color: #3a3a3a;  /* Consistent with chart container */
+    }
+
+    .topnav a:hover {
+        background-color: #00ff9c;  /* Neon green */
+        color: #1e1e1e;
+    }
+
+    body {
+        padding-top: 120px;
+    }
+}
+
+/* Additional global styles for dark theme */
+a {
+    color: #00b4ff;  /* Electric blue for links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff0000;  /* Neon green on hover */
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    color: #000000;
+    vertical-align: top;
+}
+
+th {
+    background-color: #FFFFFF;
+    font-weight: bold;
+}
+
+.pro {
+    color: green;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.con {
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+h2{ 
+    text-align:center;
+}
+.chart-container { 
+            width: 100%; 
+            max-width: 1200px; 
+        }
+fieldset {
+    color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #00b4ff;  /* neon blue */
+    padding: 0 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 600;
+}
+
+input[type="text"], 
+input[type="email"], 
+select, 
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="radio"], 
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+input[type="submit"]:hover, 
+input[type="reset"]:hover {
+    background-color: #00b4ff;
+}
+
+select[multiple] {
+    height: 100px;
+}
+
+textarea {
+    resize: vertical;
+}
+.video-container {
+            width: 80%; /* Limit the video width to 80% of the viewport width */
+            max-width: 800px; /* Set a maximum width */
+            margin: 0 auto; /* Center the video horizontally */
+        }
+
+        video {
+            width: 100%; /* Make the video fill the container's width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 10px; /* Optional: rounded corners for the video */
+        }

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+ <title>Game Designer Salary Progression</title>
+  <meta charset= "UTF-8">
+  <meta name="description" content="This is a webpage about Esports and Video Games">
+  <meta name="keywords" content="Esports, Developers,League,Video Games.">
+  <meta name="author" content="Darryl Knight Jr.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Game_Developer.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+    <style>
+        body { 
+            display: flex;
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            font-family: Arial, sans-serif; 
+        }
+    </style>
+ </head> 
+<body> 
+<div class="topnav">
+  <a href="WelcomePage.html">Welcome</a> 
+  <a href="KnightDarrylHomepage.html">Home</a>
+  <a class="active" href="Salary.html">Salary</a>
+  <a href="Support.html">Support</a> 
+  <a href="GameEngines.html">GameEngines</a>
+  <a href="Gallery.html">Gallery</a>
+</div>
+    <div class="chart-container">
+        <canvas id="salaryChart"></canvas>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('salaryChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Entry Level', 'Junior', 'Mid-Level', 'Senior', 'Lead Designer'],
+                datasets: [{
+                    label: 'Annual Salary ($)',
+                    data: [50000, 70000, 90000, 120000, 150000],
+                    backgroundColor: [
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
+                        'rgba(255, 206, 86, 0.6)',
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(153, 102, 255, 0.6)'
+                    ],
+                    borderColor: [
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(153, 102, 255, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Game Designer Salary Progression',
+                        font: {
+                            size: 18
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return '$' + context.parsed.y.toLocaleString() + ' per year';
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Annual Salary ($)'
+                        },
+                        ticks: {
+                            callback: function(value) {
+                                return '$' + value.toLocaleString();
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
