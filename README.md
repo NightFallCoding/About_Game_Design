@@ -4,9 +4,9 @@ Welcome to **Nightfall Development**, my first HTML project! This project serves
 
 ## Project Features
 
-- **Welcome Page**: A landing page to introduce the project and set the tone.
+- **Index**: A landing page to introduce the project and set the tone.
 - **Personal Homepage**: Learn about me, my background, and my goals in IT and game development.
-- **Gallery**: A collection of images and media showcasing my work and inspirations.
+- **Gallery**: A collection of images and media showcasing my personal gameplay videos.
 - **Game Engines Page**: Information about game development tools like Unreal Engine and Godot.
 - **Support Page**: A section dedicated to providing resources or contact options.
 - **Salary Insights**: Discusses potential earnings in IT or game development roles.
